@@ -1,33 +1,38 @@
-﻿<Window x:Class="TM_CarStats.MainWindow"
+﻿<Controls:MetroWindow x:Class="TM_CarStats.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Trinity Motorsports Car Stats" Height="720" Width="1280" Background="#FF212121" MinHeight="500" MinWidth="889" Loaded="Window_Loaded">
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:TM_CarStats"
+        Title="Trinity Motorsports Car Stats" Height="720" Width="1280" MinHeight="500" MinWidth="889" Loaded="Window_Loaded" Closing="Window_Closing" GlowBrush="#FF0059FF">
     <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-		<Menu x:Name="MainMenu" Grid.Row="0" Height="25" VerticalAlignment="Top"/>
+		<Menu x:Name="MainMenu" Grid.Row="0" Height="25" VerticalAlignment="Top" BorderBrush="White" BorderThickness="0,0,0,1" />
 		<Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="Grid0" Grid.Row="1" >
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition MinWidth="200" />
 				<ColumnDefinition Width="Auto" />
 				<ColumnDefinition MinWidth="200" />
 			</Grid.ColumnDefinitions>
-			<GridSplitter Grid.Column="1" Grid.ColumnSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="5" Background="#FFAAAAAA" ResizeDirection="Columns" Margin="0" x:Name="GridSplitterC" />
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <local:RacingMonitor x:Name="RacingMonitor" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            </ScrollViewer>
+			<GridSplitter Grid.Column="1" Grid.ColumnSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="5" ResizeDirection="Columns" Margin="0" x:Name="GridSplitterC" />
 			<Grid Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="Grid1">
 				<Grid.RowDefinitions>
 					<RowDefinition MinHeight="70" />
 					<RowDefinition Height="Auto" />
 					<RowDefinition MinHeight="70" />
 				</Grid.RowDefinitions>
-				<GridSplitter Grid.Row="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="5" Background="#FFAAAAAA" ResizeDirection="Rows" Margin="0" x:Name="GridSplitterR" />
+				<GridSplitter Grid.Row="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="5" ResizeDirection="Rows" Margin="0" x:Name="GridSplitterR" />
 			</Grid>
 		</Grid>
-		<StatusBar x:Name="MyStatusBar" Height="25" Grid.RowSpan="2" VerticalAlignment="Top" Grid.Row="2">
+		<StatusBar x:Name="MyStatusBar" Height="25" Grid.RowSpan="2" VerticalAlignment="Top" Grid.Row="2" Background="#FF0059FF">
 			<StatusBarItem x:Name="Item1" Content="StatusBarItem" Height="25" VerticalAlignment="Top" Margin="10,0,0,0"/>
 		</StatusBar>
         
 	</Grid>
-</Window>
+</Controls:MetroWindow>
