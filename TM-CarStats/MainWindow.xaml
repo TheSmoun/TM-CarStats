@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:TM_CarStats"
-        Title="Trinity Motorsports Car Stats" Height="720" Width="1280" MinHeight="500" MinWidth="889" Loaded="Window_Loaded" Closing="Window_Closing" GlowBrush="#FF0059FF">
+        Title="Trinity Motorsports Car Stats" Height="720" Width="1280" MinHeight="500" MinWidth="889" Loaded="Window_Loaded" Closing="Window_Closing" GlowBrush="#FF007ACC">
     <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -30,7 +30,7 @@
 				<GridSplitter Grid.Row="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="5" ResizeDirection="Rows" Margin="0" x:Name="GridSplitterR" />
 			</Grid>
 		</Grid>
-		<StatusBar x:Name="MyStatusBar" Height="25" Grid.RowSpan="2" VerticalAlignment="Top" Grid.Row="2" Background="#FF0059FF">
+        <StatusBar x:Name="MyStatusBar" Height="25" Grid.RowSpan="2" VerticalAlignment="Top" Grid.Row="2" Background="#FF007ACC">
 			<StatusBarItem x:Name="Item1" Content="StatusBarItem" Height="25" VerticalAlignment="Top" Margin="10,0,0,0"/>
 		</StatusBar>
         
