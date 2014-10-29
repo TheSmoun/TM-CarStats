@@ -93,6 +93,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TMTVO\TMTVO-Api\TMTVO-Api.csproj">
+      <Project>{78c82cde-06dc-4cf4-927f-d16ffe007379}</Project>
+      <Name>TMTVO-Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TMTVO\TMTVO-Modules\TMTVO-Modules.csproj">
+      <Project>{6bf87ba5-0840-41be-9c91-e609e50d7ddb}</Project>
+      <Name>TMTVO-Modules</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
