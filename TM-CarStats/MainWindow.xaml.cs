@@ -57,6 +57,7 @@ namespace TM_CarStats
             updateTimer.Tick += Api.Connect;
             updateTimer.Tick += updateStatusBar;
             updateTimer.Tick += updateRacingMonitor;
+            updateTimer.Tick += updateCarStats;
 
             updateTimer.Start();
         }
@@ -72,6 +73,11 @@ namespace TM_CarStats
         private void updateRacingMonitor(object sender, EventArgs e)
         {
             RacingMonitor.Update(module);
+        }
+
+        private void updateCarStats(object sender, EventArgs e)
+        {
+            MyCarStats.Update(Api);
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

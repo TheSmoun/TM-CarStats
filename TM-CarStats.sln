@@ -9,6 +9,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMTVO-Modules", "..\TMTVO\T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMTVO-Api", "..\TMTVO\TMTVO-Api\TMTVO-Api.csproj", "{78C82CDE-06DC-4CF4-927F-D16FFE007379}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CarStartsPage", "http://localhost:5165", "{DF14069C-F6D2-4140-BC87-08D40910E70B}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_5165"
+		Debug.AspNetCompiler.PhysicalPath = "CarStartsPage\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5165\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_5165"
+		Release.AspNetCompiler.PhysicalPath = "CarStartsPage\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5165\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "CarStartsPage\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +49,10 @@ Global
 		{78C82CDE-06DC-4CF4-927F-D16FFE007379}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78C82CDE-06DC-4CF4-927F-D16FFE007379}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78C82CDE-06DC-4CF4-927F-D16FFE007379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF14069C-F6D2-4140-BC87-08D40910E70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF14069C-F6D2-4140-BC87-08D40910E70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF14069C-F6D2-4140-BC87-08D40910E70B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF14069C-F6D2-4140-BC87-08D40910E70B}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
