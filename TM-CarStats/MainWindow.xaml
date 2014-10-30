@@ -10,8 +10,8 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Menu x:Name="MainMenu" Grid.Row="0" Height="25" VerticalAlignment="Top" BorderBrush="#FF3F3F46" BorderThickness="0,0,0,1" />
-		<Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="Grid0" Grid.Row="1" >
+        <Menu x:Name="MainMenu" Grid.Row="0" Height="25" VerticalAlignment="Top" BorderThickness="0,0,0,1" Background="{x:Null}" />
+		<Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="Grid0" Grid.Row="1" Margin="10" Background="#FF1E1E1E" >
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition MinWidth="200" />
 				<ColumnDefinition Width="Auto" />
@@ -20,7 +20,7 @@
             <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
                 <local:RacingMonitor x:Name="RacingMonitor" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
             </ScrollViewer>
-            <GridSplitter Grid.Column="1" Grid.ColumnSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="5" ResizeDirection="Columns" Margin="0" x:Name="GridSplitterC" Background="#FF3F3F46" />
+            <GridSplitter Grid.Column="1" Grid.ColumnSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="5" ResizeDirection="Columns" Margin="0" x:Name="GridSplitterC" Background="#FF2D2D30" />
 			<Grid Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="Grid1">
 				<Grid.RowDefinitions>
 					<RowDefinition MinHeight="70" />
@@ -30,7 +30,7 @@
                 <Viewbox Grid.Row="0">
 					<local:CarStats x:Name="MyCarStats" Height="317.5" Width="633.5" />
 				</Viewbox>
-                <GridSplitter Grid.Row="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" Height="5" ResizeDirection="Rows" Margin="0" x:Name="GridSplitterR" Background="#FF3F3F46" />
+                <GridSplitter Grid.Row="1" Grid.RowSpan="1" HorizontalAlignment="Stretch" Height="5" ResizeDirection="Rows" Margin="0" x:Name="GridSplitterR" Background="#FF2D2D30" />
 			</Grid>
 		</Grid>
         <StatusBar x:Name="MyStatusBar" Height="25" Grid.RowSpan="2" VerticalAlignment="Top" Grid.Row="2" Background="#FF007ACC">
